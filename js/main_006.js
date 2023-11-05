@@ -147,7 +147,7 @@ map.on('load', async function () {
 	//amx
 	let PMTILES_URL01 = "https://smb.optgeo.org/ipfs/QmQKr81RNT2mD3YJYoKhJnAMpyBPWeva6XtwjnCgJyjcRK?filename=a.pmtiles";
 
-	//【ベクトル】（ＰＬＡＴＡＵＥ：shi-worksさん）
+	//【ベクトル】（ＰＬＡＴＥＡＵ：shi-worksさん）
 	let PMTILES_URL02 = "https://xs489works.xsrv.jp/pmtiles-data/plateau/PLATEAU_2020_LOD1.pmtiles";
 
 
