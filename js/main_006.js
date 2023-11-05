@@ -144,11 +144,11 @@ map.on('load', async function () {
 	let protocol = new pmtiles.Protocol();
         maplibregl.addProtocol("pmtiles",protocol.tile);
 
-	//office-shirado.com
-	let PMTILES_URL01 = "https://office-shirado.com/maps/Moj_Map/MojMap_2023.pmtiles";
+	//amx
+	let PMTILES_URL01 = "https://smb.optgeo.org/ipfs/QmQKr81RNT2mD3YJYoKhJnAMpyBPWeva6XtwjnCgJyjcRK?filename=a.pmtiles";
 
-	//【ベクトル】（ＰＬＡＴＡＵＥ）
-	let PMTILES_URL02 = "https://office-shirado.com/maps/PLATEAU/PLATEAU_2020_LOD1.pmtiles";
+	//【ベクトル】（ＰＬＡＴＡＵＥ：shi-worksさん）
+	let PMTILES_URL02 = "https://xs489works.xsrv.jp/pmtiles-data/plateau/PLATEAU_2020_LOD1.pmtiles";
 
 
         const PMTiles01 = new pmtiles.PMTiles(PMTILES_URL01)
@@ -161,7 +161,6 @@ map.on('load', async function () {
         // 法務省地図
 	map.addSource('MOJ_Map',{
 		type: "vector",
-		//office-shirado.comのMaps参照
                 url: "pmtiles://" + PMTILES_URL01,
                 attribution: '<a href="https://www.moj.go.jp/MINJI/minji05_00494.html" target="_blank">法務省地図</a>'
 	});
@@ -169,7 +168,6 @@ map.on('load', async function () {
         // ＰＬＡＴＥＡＵ
 	map.addSource('PLATEAU',{
 		type: "vector",
-		//office-shirado.comのMaps参照
                 url: "pmtiles://" + PMTILES_URL02,
                 generateId: true,
                 attribution:"<a href='https://github.com/shi-works/plateau-lod1-bldg-pmtiles/' target='_blank'>PLATEAU(Shi-works)</a>"
